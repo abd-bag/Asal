@@ -28,7 +28,7 @@ def Prime_Number_Check (x):
 counter = 1
 while counter <= 20 and N != 0 :
     N = input ("Please enter a number or '0' to finish:")
-    if not N.isdigit ():
+    while not N.isdigit ():
         N = input ("%s is not a number! \n Please enter a valid number:" %N)
     else :
         N = int(N)
